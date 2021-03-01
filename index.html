@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Card-animate</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Rubik:wght@300;500;600;700;800;900&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <h1>Pokemon</h1>
+
+  <!-- MODAL -->
+  <button id="modal-btn"><img class="gifPika" src="image/pok.342.gif">Pokedex</button>
+
+  <main>
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <form class="search-form">
+          <input type="text" class="search-input" placeholder="ID Pokemon">
+          <button type="submit" class="submit-button"><img class="gifPika" src="image/pok.219.gif">Search</button>
+        </form>    
+        <div class="card">
+          <h2 class="card-name"></h2>
+          <p class="card-type"></p>
+        </div>
+        <div class="card-img-One">
+          <img class="spriteOne" src="">
+        </div>
+        <div class="card-img-Two">
+          <img class="spriteTwo" src="">
+        </div>
+        <div class="card-picture">
+          <img class="picture" src="">
+        </div>
+    </div>
+  </main>
+
+  <div id="poke_container" class="poke-container"></div>
+
+  <script src="pokedex.js"></script>
+  <script src="popup.js"></script>
+  <script src="searchpokemon.js"></script>
+</body>
+</html>
