@@ -32,7 +32,6 @@ const colors = {
 };
 const main_types = Object.keys(colors);
 
-
 ///////////////////////////////////////
 
 /*URL API*/
@@ -57,12 +56,9 @@ const poke_types = pokemon.types.map(el => el.type.name);
 const type = main_types.find(type => poke_types.indexOf(type) > -1);
 const color = colors[type];
 pokemonEl.style.backgroundColor = color;
-
 //Permet de mettre une Maj
 const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
 
-//Autre façon de faire :
-// const pokeInnerHTML = `${pokemon.id}` + `${pokemon.name}`;
 const pokeInnerHTML = 
   `
             <div class="infos">
@@ -82,12 +78,8 @@ const pokeInnerHTML =
             </div>
     
   `;
-pokemonEl.innerHTML = pokeInnerHTML;
-poke_container.appendChild(pokemonEl);
+
+  pokemonEl.innerHTML = pokeInnerHTML;
+  poke_container.appendChild(pokemonEl);   
 
 }
-
-//SPRITE CARTOON
-{/* <div class="spriteCartoon">
-  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg" alt="${name}"/>
-</div> */}

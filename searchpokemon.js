@@ -10,6 +10,11 @@ generateBtn.addEventListener("click", e => {
 
     let id = document.querySelector(".search-input").value;
 
+    if (isNaN(id)) {
+        name.innerText = "This is not an ID";
+        return;
+    }
+    else{
     async function getTwoPokemon() {
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
         const data = await res.json();
@@ -27,11 +32,11 @@ generateBtn.addEventListener("click", e => {
 
         newTypes = newTypes.charAt(0).toUpperCase() + newTypes.slice(1);
         type.innerText = newTypes;
-
-        cardImgOne.innerHTML = `<img src=${imgOne}>`;
-        cardImgTwo.innerHTML = `<img src=${imgTwo}>`;
-        cardPicture.innerHTML = `<img src=${picture}>`;
+     
+        cardImgOne.innerHTML = `<img src=${imgOne} alt="Pokemon Face">`;
+        cardImgTwo.innerHTML = `<img src=${imgTwo} alt="Pokemon Back">`;
+        cardPicture.innerHTML = `<img src=${picture} alt="Image not available">`;
     }
-
     getTwoPokemon();
+}
 });

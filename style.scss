@@ -63,17 +63,9 @@ h1{
 
    #poke_container{
 
-    @include for-tablet-portrait-up{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        }
-
-        @include for-desktop-up{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
    }
 
    .pokemon{
@@ -81,10 +73,8 @@ h1{
     max-width: 50vh;
     height: 100%;
     min-height: 60vh;
-
     margin-top: 5vh;
     margin-bottom:10vh;
-    margin-right: 12vh;
     border-radius: 30px;
     @include center;
    }
@@ -170,17 +160,17 @@ h1{
     border: none;
     border-radius:40px;
     padding: 3px 20px 20px 20px;
-    margin-left: 15vh;
+    margin-left: 1vh;
     color: white;
     font-family: 'Rubik', sans-serif;
     font-size: 2rem;
 
     @include for-tablet-portrait-up{
-        margin-left: 100vh;
+        margin-left: 13vh;
         }
 
         @include for-desktop-up{
-            margin-left: 140vh;
+            margin-left: 150vh;
             }
 }
 
@@ -189,7 +179,7 @@ h1{
 }
 
    /* ================================
-    POP UP
+    POP UP / MODAL
    ================================ */
 
 //    CONTAINER
@@ -207,19 +197,20 @@ h1{
   
   .modal-content {
     position: relative; 
-    background-color: white;
+    background-color: rgb(219, 227, 236);
     padding: 20px; 
     margin: auto; 
     width: 75%;  
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+    border-radius: 40px;
   }
   
   .close-btn {
     float: right; 
-    color: lightgray; 
+    color: rgb(85, 85, 85); 
     font-size: 24px;  
     font-weight: bold;
   }
@@ -238,12 +229,76 @@ h1{
     to {top:0; opacity:1}
   }
 
+  //Container form and button
+
+  .search-form{
+    display: flex;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 90px;
+
+    .search-input{
+    border:none;
+    border-radius:20px;
+    padding: 20px 20px;
+    }
+
+    //Button
+  .submit-button{
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    border: none;
+    border-radius:40px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+
+        @include for-desktop-up{
+            padding: 5px 20px 5px 20px;
+            margin-left: 15vh;
+            }
+  }
+
+    .gifPikaTwo{
+     margin-top: 5px;
+    }
+  }
+
+  //Sprite
+
+  .containerSpriteFlex{
+    display: flex;
+    justify-content: center;
+  }
+
+  .spriteFlex{
+      display: flex;
+  }
+
   //TEXTE
+  .titleSearch{
+    font-size: 4rem;
+    color: #2a2c53;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Slabo 13px', serif;
+  }
 
   .card-name{
     font-size: 3rem;
-    color:#2a2c53;
+    color:white;
     margin-top: 50px;
     text-align:center;
     font-family: 'Slabo 13px', serif;
+    background-color: #72749b;
+    border-radius: 20px;
   }
+
+  .card-type{
+    font-size: 3rem;
+    color:rgb(172, 172, 199);
+    margin-top: 30px;
+    text-align:center;
+    font-family: 'Slabo 13px', serif;
+}

@@ -38,30 +38,15 @@ h1 {
 /* ================================
     CARD POKEMON -> CONTAINER
    ================================ */
-@media (min-width: 768px) {
-  #poke_container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media (min-width: 1024px) {
-  #poke_container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+#poke_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .pokemon {
@@ -71,7 +56,6 @@ h1 {
   min-height: 60vh;
   margin-top: 5vh;
   margin-bottom: 10vh;
-  margin-right: 12vh;
   border-radius: 30px;
   margin-right: auto;
   margin-left: auto;
@@ -164,7 +148,7 @@ h1 {
   border: none;
   border-radius: 40px;
   padding: 3px 20px 20px 20px;
-  margin-left: 15vh;
+  margin-left: 1vh;
   color: white;
   font-family: 'Rubik', sans-serif;
   font-size: 2rem;
@@ -172,13 +156,13 @@ h1 {
 
 @media (min-width: 768px) {
   #modal-btn {
-    margin-left: 100vh;
+    margin-left: 13vh;
   }
 }
 
 @media (min-width: 1024px) {
   #modal-btn {
-    margin-left: 140vh;
+    margin-left: 150vh;
   }
 }
 
@@ -187,7 +171,7 @@ h1 {
 }
 
 /* ================================
-    POP UP
+    POP UP / MODAL
    ================================ */
 .modal {
   display: none;
@@ -203,7 +187,7 @@ h1 {
 
 .modal-content {
   position: relative;
-  background-color: white;
+  background-color: #dbe3ec;
   padding: 20px;
   margin: auto;
   width: 75%;
@@ -211,11 +195,12 @@ h1 {
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
+  border-radius: 40px;
 }
 
 .close-btn {
   float: right;
-  color: lightgray;
+  color: #555555;
   font-size: 24px;
   font-weight: bold;
 }
@@ -246,10 +231,84 @@ h1 {
   }
 }
 
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 90px;
+}
+
+.search-form .search-input {
+  border: none;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+.search-form .submit-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: orange;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-size: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .search-form .submit-button {
+    padding: 5px 20px 5px 20px;
+    margin-left: 15vh;
+  }
+}
+
+.search-form .gifPikaTwo {
+  margin-top: 5px;
+}
+
+.containerSpriteFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.spriteFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.titleSearch {
+  font-size: 4rem;
+  color: #2a2c53;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Slabo 13px', serif;
+}
+
 .card-name {
   font-size: 3rem;
-  color: #2a2c53;
+  color: white;
   margin-top: 50px;
+  text-align: center;
+  font-family: 'Slabo 13px', serif;
+  background-color: #72749b;
+  border-radius: 20px;
+}
+
+.card-type {
+  font-size: 3rem;
+  color: #acacc7;
+  margin-top: 30px;
   text-align: center;
   font-family: 'Slabo 13px', serif;
 }
