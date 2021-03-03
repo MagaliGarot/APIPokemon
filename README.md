@@ -1,32 +1,31 @@
-# 💼 Portfolio
-My portfolio
+# ![<Visuel>](/image/pok.219.png) Portfolio
+Pokedex
 
 # 🔗 Lien vers le projet : 
-Projet en construction :
-https://magaligarot.github.io/Portfolio/
+
+https://magaligarot.github.io/APIPokemon/
 
 # 🗒Le projet :
 
-Réalisation d'un Portfolio (projet personnel) en HTML, CSS et JavaScript en parallèle de la formation BeCode à Liège.
+Réalisation d'un pokedex avec l'API Pokemon : https://pokeapi.co/api/v2/pokemon/
 
-![<Visuel>](/Images/visuel.png)
+![<Visuel>](/image/capturepoke.png)
 
 ## 🔧 Langages
 * HTML
-* CSS
+* SCSS
 * JavaScript
-
-## 📙 Framework
-* Bootstrap 
 
 ## 📁 Structure du projet
 * index.html
-* style.css
-* script.js
+* style.scss
+* podekex.js
+* searchpokemon.js
+* popup.js
 
 ## 📱Responsive
 
-* Tablette et Smartphone
+* Tablette, Smartphone et Desktop
 
 
 ## 🖊 A propos :
