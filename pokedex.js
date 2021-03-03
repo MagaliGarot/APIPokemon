@@ -1,9 +1,3 @@
-// DOCUMENTATION :
-//https://www.youtube.com/watch?v=XL68br6JyYs&t=845s
-//https://www.youtube.com/watch?v=4Qyo6veprVY&t=1166s
-//GIF PIKACHU : https://www.planete-smiley.com/emoticones/Pokemon/57-3.php
-//Modal : https://medium.com/@nerdplusdog/a-how-to-guide-for-modal-boxes-with-javascript-html-and-css-6a49d063987e
-
 const poke_container = document.getElementById('poke_container');
 
 //Permet de récupérer les 151 du fichiers
