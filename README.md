@@ -1,5 +1,4 @@
-# Portfolio
-ϞϞ(๑⚈ ․̫ ⚈๑)∩ Pokedex
+# Pokedex ϞϞ(๑⚈ ․̫ ⚈๑)∩ 
 
 # 🔗 Lien vers le projet : 
 
