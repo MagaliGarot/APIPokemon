@@ -1,5 +1,5 @@
 # Portfolio
-Pokedex ![<Visuel>](/image/pok.219.png)
+ϞϞ(๑⚈ ․̫ ⚈๑)∩ Pokedex
 
 # 🔗 Lien vers le projet : 
 
